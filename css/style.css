@@ -379,7 +379,7 @@ content {
 }
 
 /*---------------------------------------------------*/
-/*	16) EDINA MEDIA QUERIES (FOR SMALL DEVIVES)
+/*	16) MEDIA QUERIES (FOR SMALL DEVIVES)
 /*---------------------------------------------------*/
 @media (max-width: 1400px) {
   .to_top_wrap {
