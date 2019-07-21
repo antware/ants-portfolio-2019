@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:800|Roboto:300,400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600,800|Roboto:300,400,500,700&display=swap');
 
 @charset "utf-8";
 
@@ -15,10 +15,10 @@
     01) RESET STYLES
 -------------------------------------*/
 
-$primary-portfolio-color: #2bff00;
+$primary-portfolio-color: #0CEB00;
 $dark-grey: #666;
-$medium-grey: #ccc;
-$light-grey: #efefef;
+$medium-grey: #8b8b8b;
+$light-grey: #ccc;
 
 @mixin box-sizing {
   box-sizing: border-box;
@@ -54,7 +54,7 @@ body {
 .header {
   width: 100%;
   height: 80px;
-  padding: 0 30px;
+  padding: 0 60px;
   background-color: #000;
   color: #fff;
   display: flex;
@@ -77,6 +77,8 @@ body {
   width: 400px;
   list-style-type: none;
   justify-content: space-between;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
 }
 
 .burger-menu {
@@ -90,13 +92,29 @@ body {
 
 section {
   width: 100%;
-  height: 300px;
+  height: auto;
+  padding: 60px;
   padding-top: 20px;
+  background-color: $medium-grey;
   @include box-sizing;
 
   &:nth-child(even) {
-    background-color: $light-grey;
+    background-color: $dark-grey;
   }
+
+  p {
+    margin-bottom: 30px;
+  }
+
+  .left-column {
+    width: 66%;
+    padding-right: 30px;
+  }
+
+  .right-column {
+    width: 33%;
+  }
+  
 }
 
 #home {
@@ -115,7 +133,7 @@ section {
 
 section h1 {
   font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
+  font-weight: 800;
   text-align: center;
   font-size: 3em;
 }
@@ -140,6 +158,16 @@ section h1 {
   }
 }
 
+.about_container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+
+  img {
+    max-width: 300px;
+  }
+}
+
 
 
 
@@ -158,7 +186,7 @@ footer {
 /*	02) MEDIA QUERY STYLES
 /*---------------------------------------------------*/
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
 
   header {
     flex-direction: column;
@@ -176,8 +204,9 @@ footer {
     left: 0;
     width: 100%;
     height: 80px;
-    padding-top: 30px;
-    text-align: center;
+    padding-top: 20px;
+    padding-left: 20px;
+    text-align: left;
     background-color: #000;
     z-index: 101;
     @include box-sizing;
@@ -200,9 +229,17 @@ footer {
     flex-direction: column;
     text-align: center;
     & li {
-      height: 40px;
-      line-height: 40px;
+      height: 50px;
+      line-height: 50px;
       border-bottom: 1px solid #fff;
+    }
+
+    & li a {
+      display: block;
+    }
+
+    & li a:hover {
+      background-color: orange;
     }
   }
 
