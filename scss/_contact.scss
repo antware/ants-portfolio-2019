@@ -41,3 +41,16 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+
+  .contact-icons-container {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .contact-icons-container ul li {
+    padding: 15px;
+  }
+
+}
