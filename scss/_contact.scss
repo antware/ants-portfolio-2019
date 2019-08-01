@@ -1,0 +1,43 @@
+/*---------------------------------------------------*/
+/*	SECTION - CONTACT
+/*---------------------------------------------------*/
+.contact-content {
+  text-align: center;
+
+  .contact-icons-container {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 60px;
+  }
+  
+  .contact-icons-container ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    li {
+      height: 40px;
+      line-height: 40px;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+
+      a {
+        display: block;
+        height: 40px;
+      }
+    }
+
+    .list-item__icon {
+      width: 40px;
+      height: 40px;
+      fill: $almost-black;
+      transition: fill 0.3s ease-out;
+      
+      &:hover {
+        fill: #fff;
+      }
+    }
+  }
+}

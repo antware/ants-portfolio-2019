@@ -1,0 +1,44 @@
+/* -----------------------------------
+  BASE STYLES
+-------------------------------------*/
+
+// Color Variables
+$primary-portfolio-color: #0CEB00;
+$almost-black: #111; 
+$really-really-dark-grey: #1d1d1d; 
+$really-dark-grey: #222; 
+$dark-grey: #555;
+$medium-grey: #8b8b8b;
+$light-grey: #ccc;
+$really-light-grey: #efefef;
+
+// Font Family Variables
+$heading-font: 'Oswald', sans-serif;
+$body-content-font: 'Quattrocento', serif;
+
+@mixin box-sizing {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow-x: hidden;
+  padding: 0px;
+  margin: 0px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $body-content-font;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+  word-wrap: break-word;
+  color: $really-light-grey;
+  background-color: $almost-black;
+}

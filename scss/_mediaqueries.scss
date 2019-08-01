@@ -1,0 +1,189 @@
+/*---------------------------------------------------*/
+/*	MEDIA QUERY STYLES
+/*---------------------------------------------------*/
+
+@media screen and (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    justify-content: flex-end;
+    
+  }
+
+  .header {
+    padding: 0;
+  }
+
+  .brand {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    padding-top: 20px;
+    padding-left: 20px;
+    text-align: left;
+    background-color: $almost-black;
+    z-index: 101;
+    @include box-sizing;
+  }
+
+  .menu {
+    margin-top: -600px;
+    width: 100%;
+    background-color: $really-dark-grey;;
+    transition: all 0.6s ease-in-out;
+  }
+
+  .menu.slide {
+    margin-top: 80px;
+  }
+
+  .menu ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    & li {
+      height: 50px;
+      line-height: 50px;
+      border-bottom: 1px solid $almost-black;
+    }
+
+    & li a {
+      display: block;
+    }
+
+    & li a:hover {
+      background-color: $dark-grey;
+      color: $primary-portfolio-color; 
+    }
+  }
+
+  .burger-menu {
+    display: block;
+    position: fixed;
+    top: 25px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 102;
+  }
+
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: 0.3s;
+  }
+  
+  .change .bar1 {
+    transform: rotate(-45deg) translate(-6px, 6px);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  section {
+    padding: 20px;
+    padding-bottom: 80px;
+  }
+
+  section h1 {
+    font-size: 2.5em;
+
+  }
+
+  .header-line {
+    width: 40px;
+    transform: rotate(90deg);
+  
+  }
+
+  section h2 {
+    text-align: center;
+
+  }
+
+  #about, #skills, #portfolio, #contact {
+    padding-top: 245px;
+  }
+
+  .number-block {
+    margin-bottom: 20px;
+  }
+
+  // About Section
+  .section-container__content--about {
+    display: flex;
+    flex-direction: column;
+
+    .left-column-about {
+      flex: 1;
+      padding-right: 0;
+  
+    }
+    
+  }
+
+  .interest-lists {
+    display: flex;
+
+    .interest-list-1 {
+      margin-right: 20%;
+    }
+  }
+
+  // Skill Section
+  .section-container__content--skills {
+    display: flex;
+    flex-direction: column;
+
+    .left-column-skills, .right-column-skills {
+      width: 100%;
+    }
+    
+  }
+  .skill-container {
+    width: 100%;
+  }
+
+  .skill-sub-header.right {
+    margin-top: 40px;
+  }
+
+  footer {
+    height: 120px;
+    background-color: $almost-black;
+    color: #fff;
+    padding-top: 0;
+    padding-bottom: -180px;
+    overflow:hidden;
+  
+    img {
+      transform: rotate(-10deg);
+      height: 150px;
+      
+    }
+
+  }
+
+}
+
+@media only screen and (max-width: 520px) {
+
+  // About Section
+  .interest-lists {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+
+}

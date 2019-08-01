@@ -1,0 +1,249 @@
+/*---------------------------------------------------*/
+/*	SECTION - SKILLS
+/*---------------------------------------------------*/
+
+.section-container__content--skills {
+  display: flex;
+  justify-content: space-between;
+
+  .left-column-skills {
+    width: 45%;
+  }
+
+  .right-column-skills {
+    width: 45%;
+  }
+}
+
+// Animations - Scrollmagic
+
+.skill-container {
+  position: relative;
+  width: 100%;
+  /* Full width */
+  // background-color: #ddd;
+  /* Grey background */
+  /* border-radius: 4px; */
+
+  &:not(:last-of-type) {
+    margin-bottom: 6px;
+  } 
+}
+
+.skills {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: right;
+  /* Right-align text */
+  padding-top: 2px;
+  /* Add top padding */
+  padding-bottom: 2px;
+  /* Add bottom padding */
+  padding-right: 10px;
+  padding-left: 10px;
+  color: white;
+  /* White text color */
+  /* border-radius: 4px;
+  background-color: #4caf50;
+  background-image: linear-gradient(
+    90deg,
+    rgba(12, 235, 0, 1) 0%,
+    rgba(35, 136, 2, 1) 100%
+  ); */
+  border-bottom: 2px solid rgba(12, 235, 0, 1);
+}
+
+.skill-title,
+.skill-percentile {
+  color: #777;
+  animation-name: showOpacity;
+  animation-duration: 2s;
+  animation-delay: 0.8s;
+  animation-fill-mode: backwards;
+}
+
+.html {
+  width: 0%;
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+.html.slide {
+  width: 95%;
+  opacity: 1;
+  animation-name: slide-95;
+  animation-duration: 4s;
+}
+
+.css {
+  width: 0%;
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+.css.slide {
+  width: 90%;
+  opacity: 1;
+  animation-name: slide-90;
+  animation-duration: 4s;
+}
+
+.javascript, .phpmysql {
+  width: 0%;
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+.javascript.slide, .phpmysql.slide {
+  width: 70%;
+  opacity: 1;
+  animation-name: slide-70;
+  animation-duration: 4s;
+
+}
+
+.jquery, .react {
+  width: 0%;
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+.jquery.slide, .react.slide {
+  width: 70%;
+  opacity: 1;
+  animation-name: slide-70;
+  animation-duration: 4s;
+
+}
+
+.bootstrap, .git {
+  width: 0%;
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+.bootstrap.slide, .git.slide {
+  width: 80%;
+  opacity: 1;
+  animation-name: slide-80;
+  animation-duration: 4s;
+}
+
+.wordpress {
+  width: 0%;
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+.wordpress.slide {
+  width: 85%;
+  opacity: 1;
+  animation-name: slide-85;
+  animation-duration: 4s;
+}
+
+.node {
+  width: 0%;
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+.node.slide {
+  width: 40%;
+  opacity: 1;
+  animation-name: slide-40;
+  animation-duration: 4s;
+}
+
+.photoshop {
+  width: 0%;
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+.photoshop.slide {
+  width: 85%;
+  opacity: 1;
+  animation-name: slide-85;
+  animation-duration: 4s;
+}
+
+.xd {
+  width: 0%;
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+.xd.slide {
+  width: 80%;
+  opacity: 1;
+  animation-name: slide-80;
+  animation-duration: 4s;
+}
+
+.illustrator {
+  width: 0%;
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+.illustrator.slide {
+  width: 85%;
+  opacity: 1;
+  animation-name: slide-85;
+  animation-duration: 4s;
+}
+
+.indesign {
+  width: 0%;
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+.indesign.slide {
+  width: 85%;
+  opacity: 1;
+  animation-name: slide-85;
+  animation-duration: 4s;
+}
+
+.acrobat {
+  width: 0%;
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+.acrobat.slide {
+  width: 80%;
+  opacity: 1;
+  animation-name: slide-80;
+  animation-duration: 4s;
+}
+
+.quark {
+  width: 0%;
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+.quark.slide {
+  width: 80%;
+  opacity: 1;
+  animation-name: slide-80;
+  animation-duration: 4s;
+}
+
+.powerpoint {
+  width: 0%;
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+.powerpoint.slide {
+  width: 85%;
+  opacity: 1;
+  animation-name: slide-85;
+  animation-duration: 4s;
+}
+

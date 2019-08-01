@@ -1,0 +1,41 @@
+/*---------------------------------------------------*/
+/*	FOOTER STYLES
+/*---------------------------------------------------*/
+
+footer {
+  background-image: linear-gradient(to bottom, #222 , $almost-black);
+  // background-image: linear-gradient(90deg, rgba(12,235,0,1) 0%, rgba(35, 136, 2,1) 100%);
+  color: #fff;
+  padding-top: 40px;
+  // overflow:hidden;
+  position: relative;
+
+  &-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    
+  }
+
+  .copyright {
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #000;
+    color: $dark-grey;
+    z-index: 100;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+    // margin-top: -70px;
+    // transform: rotate(-10deg);
+    height: 500px;
+    
+  }
+}
+
