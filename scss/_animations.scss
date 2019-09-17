@@ -62,6 +62,26 @@
   }
 }
 
+@keyframes slide-60 {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 60%;
+  }
+}
+
+@keyframes slide-50 {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 50%;
+  }
+}
+
 @keyframes slide-40 {
   from {
     width: 0;

@@ -135,6 +135,42 @@ body {
   }
 }
 
+@-webkit-keyframes slide-60 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 60%;
+  }
+}
+
+@keyframes slide-60 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 60%;
+  }
+}
+
+@-webkit-keyframes slide-50 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50%;
+  }
+}
+
+@keyframes slide-50 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50%;
+  }
+}
+
 @-webkit-keyframes slide-40 {
   from {
     width: 0;
@@ -1069,34 +1105,34 @@ section h2 {
           animation-duration: 4s;
 }
 
-.javascript, .phpmysql {
+.javascript, .jquery {
   width: 0%;
   opacity: 0;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
 
-.javascript.slide, .phpmysql.slide {
-  width: 70%;
+.javascript.slide, .jquery.slide {
+  width: 60%;
   opacity: 1;
-  -webkit-animation-name: slide-70;
-          animation-name: slide-70;
+  -webkit-animation-name: slide-60;
+          animation-name: slide-60;
   -webkit-animation-duration: 4s;
           animation-duration: 4s;
 }
 
-.jquery, .react {
+.react, .phpmysql {
   width: 0%;
   opacity: 0;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
 
-.jquery.slide, .react.slide {
-  width: 70%;
+.react.slide, .phpmysql.slide {
+  width: 50%;
   opacity: 1;
-  -webkit-animation-name: slide-70;
-          animation-name: slide-70;
+  -webkit-animation-name: slide-50;
+          animation-name: slide-50;
   -webkit-animation-duration: 4s;
           animation-duration: 4s;
 }

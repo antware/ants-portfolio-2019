@@ -89,30 +89,30 @@
   animation-duration: 4s;
 }
 
-.javascript, .phpmysql {
+.javascript, .jquery {
   width: 0%;
   opacity: 0;
   transition: all 0.4s;
 }
 
-.javascript.slide, .phpmysql.slide {
-  width: 70%;
+.javascript.slide, .jquery.slide {
+  width: 60%;
   opacity: 1;
-  animation-name: slide-70;
+  animation-name: slide-60;
   animation-duration: 4s;
 
 }
 
-.jquery, .react {
+.react, .phpmysql {
   width: 0%;
   opacity: 0;
   transition: all 0.4s;
 }
 
-.jquery.slide, .react.slide {
-  width: 70%;
+.react.slide, .phpmysql.slide {
+  width: 50%;
   opacity: 1;
-  animation-name: slide-70;
+  animation-name: slide-50;
   animation-duration: 4s;
 
 }
