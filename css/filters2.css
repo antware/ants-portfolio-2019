@@ -1,0 +1,53 @@
+input[type="radio"] {
+  position: absolute;
+  left: -99999px;
+}
+
+.filters {
+  list-style: none;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.projects li.project {
+  display: block;
+}
+
+img {
+  max-width: 300px;
+  transition: all .4s;
+}
+
+/* FILTERING RULES
+–––––––––––––––––––––––––––––––––––––––––––––––––– 
+Label CSS
+*/
+
+[value="All"]:checked ~ .filters [for="All"],
+[value="WordPress"]:checked ~ .filters [for="WordPress"],
+[value="JavaScript"]:checked ~ .filters [for="JavaScript"],
+[value="jQuery"]:checked ~ .filters [for="jQuery"],
+[value="React"]:checked ~ .filters [for="React"],
+[value="UI Design"]:checked ~ .filters [for="UI Design"],
+[value="Graphic Design"]:checked ~ .filters [for="Graphic Design"] {
+  background: orange;
+  color: white;
+}
+
+[value="All"]:checked ~ .projects [data-category] {
+  display: block;
+}
+
+[value="WordPress"]:checked ~ .projects .project:not([data-category~="WordPress"]),
+[value="JavaScript"]:checked ~ .projects .project:not([data-category~="JavaScript"]),
+[value="jQuery"]:checked ~ .projects .project:not([data-category~="jQuery"]),
+[value="React"]:checked ~ .projects .project:not([data-category~="React"]),
+[value="UI Design"]:checked ~ .projects .project:not([data-category~="UI"]),
+[value="Graphic Design"]:checked ~ .projects .project:not([data-category~="Graphic"]) {
+  display: none;
+}
+
